@@ -8,26 +8,43 @@
         </a>
       </div>
 
+      <!-- Menú de hamburguesa para móviles -->
+      <button
+        @click="toggleMenu"
+        class="md:hidden text-white text-2xl focus:outline-none"
+        aria-label="Abrir menú"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="w-8 h-8"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+
       <!-- Navegación -->
-      <nav>
-        <ul class="flex space-x-8 text-lg font-semibold">
-          <li>
-            <a href="https://yersonrodriguezdev.vercel.app/" class="nav-link">Sobre mí</a>
-          </li>
-          <li>
-            <a href="#services" class="nav-link">Servicios</a>
-          </li>
-          <li>
-            <a href="#portfolio" class="nav-link">Portafolio</a>
-          </li>
-          <li>
-            <a href="#contact" class="nav-link">Contacto</a>
-          </li>
-        </ul>
+      <nav
+        :class="[
+          'flex flex-col md:flex-row md:space-x-8 text-lg font-semibold md:static',
+          menuOpen ? 'absolute top-16 left-0 w-full bg-primary px-6 py-4 space-y-4' : 'hidden md:flex',
+        ]"
+      >
+        <a href="https://yersonrodriguezdev.vercel.app/" class="nav-link">Sobre mí</a>
+        <a href="#services" class="nav-link">Servicios</a>
+        <a href="#portfolio" class="nav-link">Portafolio</a>
+        <a href="#contact" class="nav-link">Contacto</a>
       </nav>
 
       <!-- Botón de Contacto -->
-      <div>
+      <div class="hidden md:block">
         <a
           href="#contact"
           class="contact-button transition duration-300 ease-in-out transform hover:scale-105 shadow-lg"
@@ -40,7 +57,15 @@
 </template>
 
 <script setup>
-// No se necesitan datos en este caso
+import { ref } from "vue";
+
+// Estado del menú
+const menuOpen = ref(false);
+
+// Función para abrir/cerrar menú
+const toggleMenu = () => {
+  menuOpen.value = !menuOpen.value;
+};
 </script>
 
 <style scoped>
@@ -94,8 +119,10 @@
   color: #2b3a42;
 }
 
-/* Logo animado */
-.text-3xl {
-  font-size: 1.875rem; /* Tamaño inicial del logo */
+/* Responsividad */
+@media (max-width: 768px) {
+  .nav-link {
+    text-align: left;
+  }
 }
 </style>
