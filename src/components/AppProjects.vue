@@ -23,7 +23,7 @@
               class="w-6 h-6 inline-block mr-2 bg-[#4479A1] p-1 rounded-full transition-transform duration-300 transform hover:scale-110" />
           </p>
           <div class="flex justify-between mt-4">
-            <a href="https://github.com/tu_usuario/fylec" class="text-primary font-semibold hover:underline"
+            <a href="https://github.com/LuisCabrera03/FYLEC" class="text-primary font-semibold hover:underline"
               target="_blank">Ver Repositorio</a>
           </div>
         </div>
@@ -44,7 +44,7 @@
               class="w-6 h-6 inline-block mr-2 bg-[#4479A1] p-1 rounded-full transition-transform duration-300 transform hover:scale-110" />
           </p>
           <div class="flex justify-between mt-4">
-            <a href="https://github.com/tu_usuario/crud-laravel" class="text-primary font-semibold hover:underline"
+            <a href="https://github.com/YersonRodriguez2005/crud-laravel" class="text-primary font-semibold hover:underline"
               target="_blank">Ver Repositorio</a>
           </div>
         </div>
@@ -65,7 +65,7 @@
               class="w-6 h-6 inline-block mr-2 bg-[#4479A1] p-1 rounded-full transition-transform duration-300 transform hover:scale-110" />
           </p>
           <div class="flex justify-between mt-4">
-            <a href="https://github.com/tu_usuario/system-pos" class="text-primary font-semibold hover:underline"
+            <a href="https://github.com/YersonRodriguez2005/system-pos" class="text-primary font-semibold hover:underline"
               target="_blank">Ver Repositorio</a>
           </div>
         </div>
@@ -86,7 +86,7 @@
               class="w-6 h-6 inline-block mr-2 bg-[#4479A1] p-1 rounded-full transition-transform duration-300 transform hover:scale-110" />
           </p>
           <div class="flex justify-between mt-4">
-            <a href="https://github.com/tu_usuario/note-app" class="text-primary font-semibold hover:underline"
+            <a href="https://github.com/YersonRodriguez2005/note-app" class="text-primary font-semibold hover:underline"
               target="_blank">Ver Repositorio</a>
           </div>
         </div>
@@ -107,7 +107,7 @@
               class="w-6 h-6 inline-block mr-2 bg-[#4479A1] p-1 rounded-full transition-transform duration-300 transform hover:scale-110" />
           </p>
           <div class="flex justify-between mt-4">
-            <a href="https://github.com/tu_usuario/task-manager-app" class="text-primary font-semibold hover:underline"
+            <a href="https://github.com/YersonRodriguez2005/task-manager-app" class="text-primary font-semibold hover:underline"
               target="_blank">Ver Repositorio</a>
           </div>
         </div>
@@ -124,31 +124,31 @@ const projects = ref([
     title: 'FYLEC',
     description: 'FYLEC es un software web diseñado para la compra y venta de productos de ferreterías en línea, optimizando la experiencia del usuario y la gestión eficiente de productos.',
     technologies: ['React', 'Python', 'Flask', 'MySQL'],
-    repoLink: 'https://github.com/tu_usuario/fylec',
+    repoLink: 'https://github.com/LuisCabrera03/FYLEC',
   },
   {
     title: 'CRUD Laravel',
     description: 'El CRUD en Laravel gestiona Crear, Leer, Actualizar y Eliminar registros usando Eloquent ORM y controladores, permitiendo una administración eficiente de datos.',
     technologies: ['Laravel', 'PHP', 'MySQL'],
-    repoLink: 'https://github.com/tu_usuario/crud-laravel',
+    repoLink: 'https://github.com/YersonRodriguez2005/crud-laravel',
   },
   {
     title: 'System-POS',
     description: 'Sistema de Punto de Venta (POS) diseñado para un restaurante de comidas rápidas, que permite gestionar el inventario y registrar las ventas de manera eficiente.',
     technologies: ['React', 'Node.js', 'MySQL'],
-    repoLink: 'https://github.com/tu_usuario/system-pos',
+    repoLink: 'https://github.com/YersonRodriguez2005/system-pos',
   },
   {
     title: 'Note-App',
     description: 'App web diseñada para facilitar la gestión de notas personales. Los usuarios pueden agregar, actualizar y eliminar notas, así como clasificarlas en diferentes categorías (Personal, Trabajo, Estudio, Ideas, Proyecto).',
     technologies: ['React', 'Python', 'MySQL'],
-    repoLink: 'https://github.com/tu_usuario/note-app',
+    repoLink: 'https://github.com/YersonRodriguez2005/note-app',
   },
   {
     title: 'Task-Manager-App',
     description: 'App para la gestión de tareas personales, que permite a los usuarios agregar, editar y eliminar tareas de forma eficiente, así como organizarlas por prioridad, fecha y categoría.',
     technologies: ['Vue.js', 'Node.js', 'MySQL'],
-    repoLink: 'https://github.com/tu_usuario/task-manager-app',
+    repoLink: 'https://github.com/YersonRodriguez2005/task-manager-app',
   },
 ]);
 </script>
