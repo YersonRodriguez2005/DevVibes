@@ -1,10 +1,10 @@
 <template>
   <header class="bg-primary shadow-lg fixed w-full z-10 transition-all duration-500 ease-in-out">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <!-- Logo con animación hover -->
+      <!-- Logo con icono -->
       <div class="text-3xl font-extrabold transition-transform duration-300 transform hover:scale-105">
-        <a href="/" class="text-secondary hover:text-white transition-colors duration-300">
-          DevVibes
+        <a href="/" class="text-secondary hover:text-white transition-colors duration-300 flex items-center gap-2">
+          <i class="fas fa-code"></i> DevVibes
         </a>
       </div>
 
@@ -32,24 +32,32 @@
 
       <!-- Navegación -->
       <nav
-        :class="[
+        :class="[ 
           'flex flex-col md:flex-row md:space-x-8 text-lg font-semibold md:static',
           menuOpen ? 'absolute top-16 left-0 w-full bg-primary px-6 py-4 space-y-4' : 'hidden md:flex',
         ]"
       >
-        <a href="https://yersonrodriguezdev.vercel.app/" class="nav-link">Sobre mí</a>
-        <a href="#services" class="nav-link">Servicios</a>
-        <a href="#portfolio" class="nav-link">Portafolio</a>
-        <a href="#contact" class="nav-link">Contacto</a>
+        <a href="https://yersonrodriguezdev.vercel.app/" class="nav-link flex items-center gap-2">
+          <i class="fas fa-user"></i> Sobre mí
+        </a>
+        <a href="#services" class="nav-link flex items-center gap-2">
+          <i class="fas fa-briefcase"></i> Servicios
+        </a>
+        <a href="#portfolio" class="nav-link flex items-center gap-2">
+          <i class="fas fa-th-large"></i> Portafolio
+        </a>
+        <a href="#contact" class="nav-link flex items-center gap-2">
+          <i class="fas fa-envelope"></i> Contacto
+        </a>
       </nav>
 
       <!-- Botón de Contacto -->
       <div class="hidden md:block">
         <a
           href="#contact"
-          class="contact-button transition duration-300 ease-in-out transform hover:scale-105 shadow-lg"
+          class="contact-button transition duration-300 ease-in-out transform hover:scale-105 shadow-lg flex items-center gap-2"
         >
-          Contáctame
+          <i class="fas fa-paper-plane"></i> Contáctame
         </a>
       </div>
     </div>

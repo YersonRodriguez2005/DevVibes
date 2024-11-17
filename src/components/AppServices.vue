@@ -7,34 +7,71 @@
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
         <!-- Desarrollo Full-Stack -->
-        <div class="service-card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out">
-          <h3 class="text-2xl font-semibold text-secondary mb-4">Desarrollo Full-Stack</h3>
+        <div
+          class="service-card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out"
+        >
+          <div class="text-secondary text-5xl mb-4">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-secondary mb-4">
+            Desarrollo Full-Stack
+          </h3>
           <p class="text-gray-700 mb-6">
-            Te ayudo a construir aplicaciones web completas, desde el frontend hasta el backend, utilizando tecnologías modernas como Vue.js, Node.js, React, Python, Flask y bases de datos como MySQL y PostgreSQL.
+            Te ayudo a construir aplicaciones web completas, desde el frontend
+            hasta el backend, utilizando tecnologías modernas como Vue.js,
+            Node.js, React, Python, Flask y bases de datos como MySQL y
+            PostgreSQL.
           </p>
-          <a href="#contact" class="text-secondary font-semibold hover:underline hover:text-primary transition-all duration-300">
+          <a
+            href="#contact"
+            class="text-secondary font-semibold hover:underline hover:text-primary transition-all duration-300"
+          >
             Contáctame para más detalles
           </a>
         </div>
 
         <!-- Desarrollo Web a Medida -->
-        <div class="service-card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out">
-          <h3 class="text-2xl font-semibold text-secondary mb-4">Desarrollo Web a Medida</h3>
+        <div
+          class="service-card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out"
+        >
+          <div class="text-secondary text-5xl mb-4">
+            <i class="fas fa-pencil-ruler"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-secondary mb-4">
+            Desarrollo Web a Medida
+          </h3>
           <p class="text-gray-700 mb-6">
-            Ofrezco soluciones personalizadas adaptadas a las necesidades específicas de tu negocio, con sitios web rápidos, responsivos y fáciles de usar.
+            Ofrezco soluciones personalizadas adaptadas a las necesidades
+            específicas de tu negocio, con sitios web rápidos, responsivos y
+            fáciles de usar.
           </p>
-          <a href="#contact" class="text-secondary font-semibold hover:underline hover:text-primary transition-all duration-300">
+          <a
+            href="#contact"
+            class="text-secondary font-semibold hover:underline hover:text-primary transition-all duration-300"
+          >
             Contáctame para discutir tu proyecto
           </a>
         </div>
 
         <!-- Automatización de Procesos -->
-        <div class="service-card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out">
-          <h3 class="text-2xl font-semibold text-secondary mb-4">Automatización de Procesos</h3>
+        <div
+          class="service-card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out"
+        >
+          <div class="text-secondary text-5xl mb-4">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-secondary mb-4">
+            Automatización de Procesos
+          </h3>
           <p class="text-gray-700 mb-6">
-            Mejora la eficiencia de tu negocio mediante la automatización de tareas repetitivas, integración de APIs, y soluciones personalizadas para optimizar tus procesos.
+            Mejora la eficiencia de tu negocio mediante la automatización de
+            tareas repetitivas, integración de APIs, y soluciones personalizadas
+            para optimizar tus procesos.
           </p>
-          <a href="#contact" class="text-secondary font-semibold hover:underline hover:text-primary transition-all duration-300">
+          <a
+            href="#contact"
+            class="text-secondary font-semibold hover:underline hover:text-primary transition-all duration-300"
+          >
             Conoce cómo puedo ayudarte
           </a>
         </div>
@@ -42,6 +79,7 @@
     </div>
   </section>
 </template>
+
 
 <script setup>
 // No se necesitan datos en este caso
