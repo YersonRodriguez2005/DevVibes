@@ -9,34 +9,17 @@
       </div>
 
       <!-- Menú de hamburguesa para móviles -->
-      <button
-        @click="toggleMenu"
-        class="md:hidden text-white text-2xl focus:outline-none"
-        aria-label="Abrir menú"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          class="w-8 h-8"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16m-7 6h7"
-          />
+      <button @click="toggleMenu" class="md:hidden text-white text-2xl focus:outline-none" aria-label="Abrir menú">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
         </svg>
       </button>
 
       <!-- Navegación -->
-      <nav
-        :class="[ 
-          'flex flex-col md:flex-row md:space-x-8 text-lg font-semibold md:static',
-          menuOpen ? 'absolute top-16 left-0 w-full bg-primary px-6 py-4 space-y-4' : 'hidden md:flex',
-        ]"
-      >
+      <nav :class="[
+        'flex flex-col md:flex-row md:space-x-8 text-lg font-semibold md:static',
+        menuOpen ? 'absolute top-16 left-0 w-full bg-primary px-6 py-4 space-y-4' : 'hidden md:flex',
+      ]">
         <a href="https://yersonrodriguezdev.vercel.app/" class="nav-link flex items-center gap-2">
           <i class="fas fa-user"></i> Sobre mí
         </a>
@@ -53,10 +36,8 @@
 
       <!-- Botón de Contacto -->
       <div class="hidden md:block">
-        <a
-          href="#contact"
-          class="contact-button transition duration-300 ease-in-out transform hover:scale-105 shadow-lg flex items-center gap-2"
-        >
+        <a href="#contact"
+          class="contact-button transition duration-300 ease-in-out transform hover:scale-105 shadow-lg flex items-center gap-2">
           <i class="fas fa-paper-plane"></i> Contáctame
         </a>
       </div>
@@ -79,11 +60,15 @@ const toggleMenu = () => {
 <style scoped>
 /* Colores principales */
 .bg-primary {
-  background-color: #2b3a42; /* Color de fondo */
+  background-color: #2b3a42;
+  /* Color de fondo */
 }
+
 .text-secondary {
-  color: #f0a500; /* Color del logo y efectos de hover */
+  color: #f0a500;
+  /* Color del logo y efectos de hover */
 }
+
 .shadow-lg {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -94,6 +79,7 @@ const toggleMenu = () => {
   position: relative;
   transition: color 0.3s ease, transform 0.3s ease;
 }
+
 .nav-link::after {
   content: "";
   position: absolute;
@@ -106,10 +92,12 @@ const toggleMenu = () => {
   transform-origin: right;
   transition: transform 0.3s ease;
 }
+
 .nav-link:hover {
   color: #f0a500;
   transform: translateY(-2px);
 }
+
 .nav-link:hover::after {
   transform: scaleX(1);
   transform-origin: left;
@@ -122,6 +110,7 @@ const toggleMenu = () => {
   padding: 0.5rem 1.25rem;
   border-radius: 9999px;
 }
+
 .contact-button:hover {
   background-color: #ffffff;
   color: #2b3a42;
